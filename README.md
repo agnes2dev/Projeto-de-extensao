@@ -1,6 +1,6 @@
-# 📱 **Tinder Corporativo — Match de Talentos**
+# 📱 **CLTinder Corporativo — Match de Talentos**
 
-Uma plataforma inspirada na dinâmica do **Tinder**, adaptada para o ambiente **corporativo**.
+Uma plataforma inspirada na dinâmica de um **app de relacionamento**, adaptada para o ambiente **corporativo**.
 
 ## 🎯 **Objetivo**
 
