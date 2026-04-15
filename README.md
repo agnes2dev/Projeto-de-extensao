@@ -13,3 +13,4 @@ O objetivo do projeto é conectar profissionais e empresas de forma rápida, int
 ## 🚀 **Como Funciona**
 
 Quando há interesse mútuo, ocorre o match, abrindo espaço para conexão e possíveis oportunidades profissionais.
+
