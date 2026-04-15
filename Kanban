@@ -1,0 +1,31 @@
+O que é Kanban?
+
+Kanban é um método visual de organização de tarefas usado para acompanhar o andamento de um projeto. Ele divide as atividades em colunas que representam etapas do trabalho.
+
+Estrutura Básica
+Backlog: lista de tarefas e ideias pendentes.
+A Fazer: atividades prontas para iniciar.
+Fazendo: tarefas em desenvolvimento.
+Testando: validações e correções.
+Feito: atividades concluídas.
+Benefícios do Kanban
+Visualização clara do progresso.
+Melhor organização da equipe.
+Priorização de tarefas.
+Identificação de gargalos.
+Aumento da produtividade.
+Kanban no Projeto
+
+No projeto da plataforma de recrutamento, o Kanban está sendo usado para organizar etapas como:
+
+Definição do problema.
+Model Business Canvas.
+Requisitos do sistema.
+Repositório GitHub.
+Protótipo.
+Banco de dados.
+Sistema de Match.
+Chat entre usuários.
+Conclusão
+
+O Kanban facilita o controle do projeto, melhora a gestão do tempo e ajuda a acompanhar entregas de forma simples e eficiente.
