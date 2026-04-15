@@ -62,4 +62,4 @@ Infraestrutura em nuvem
 Marketing e aquisição de usuários
 Equipe técnica e administrativa
 Suporte ao cliente
-Custos com segurança e proteção de dados
+Custos com segurança e proteção de dados 
