@@ -1,6 +1,3 @@
-README.MD
-
-
 # 📱 CLTinder Corporativo — Match de Talentos
 
 Uma plataforma SaaS inspirada na dinâmica de aplicativos de relacionamento, adaptada para o ambiente corporativo, com o objetivo de conectar profissionais e empresas de forma rápida, intuitiva e interativa.
