@@ -1,5 +1,6 @@
 2.3 Modelo de Negócio SaaS (Business Model Canvas)
-A plataforma será disponibilizada como Software as a Service (SaaS), acessível via web e dispositivos móveis. 
+
+https://canva.link/bo05z50qoty4qe2
 
  Proposta de Valor
 Sistema de “match” entre profissionais e empresas baseado em interesses, habilidades e objetivos
