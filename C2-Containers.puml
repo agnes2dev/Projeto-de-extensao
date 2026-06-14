@@ -1,0 +1,42 @@
+@startuml C2_Containers
+
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+
+title CLTinder - Diagrama de Containers (C2)
+
+Person(user, "Usuário")
+
+System_Boundary(cltinder, "Sistema CLTinder") {
+
+    Container(frontend,
+    "Front-end Apps",
+    "ReactJS / Flutter",
+    "Interface Web e Mobile")
+
+    Container(api,
+    "API Backend",
+    ".NET 8",
+    "Regras de negócio, autenticação e match")
+
+    ContainerDb(db,
+    "Banco de Dados",
+    "PostgreSQL",
+    "Perfis, vagas, matches e mensagens")
+
+    Container(cache,
+    "Cache e Filas",
+    "Redis",
+    "Cache e processamento assíncrono")
+}
+
+System_Ext(email, "Serviço de E-mail")
+System_Ext(auth, "Provedor OAuth")
+
+Rel(user, frontend, "Utiliza")
+Rel(frontend, api, "HTTPS / REST")
+Rel(api, db, "Lê/Escreve")
+Rel(api, cache, "Consulta/Atualiza")
+Rel(api, email, "SMTP")
+Rel(api, auth, "OAuth/JWT")
+
+@enduml
