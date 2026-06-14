@@ -1,0 +1,23 @@
+@startuml C1_Context
+
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml
+
+title CLTinder - Diagrama de Contexto (C1)
+
+Person(user, "Usuário",
+"Pessoa que utiliza o sistema para procurar vagas ou candidatos")
+
+System(cltinder, "Sistema CLTinder",
+"Plataforma estilo Tinder para conexão entre candidatos e empresas")
+
+System_Ext(email, "Sistema de E-mail",
+"Responsável pelo envio de notificações")
+
+System_Ext(auth, "Provedor de Autenticação",
+"Serviço externo de autenticação")
+
+Rel(user, cltinder, "Utiliza")
+Rel(cltinder, email, "Envia notificações")
+Rel(cltinder, auth, "Autentica usuários")
+
+@enduml
