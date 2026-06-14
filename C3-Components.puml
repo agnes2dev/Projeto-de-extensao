@@ -1,0 +1,60 @@
+@startuml C3_Components
+
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+
+title CLTinder - Componentes da API Backend (C3)
+
+Container_Boundary(api, "API Backend (.NET)") {
+
+    Component(authController,
+    "Authentication Controller",
+    "JWT",
+    "Autenticação e emissão de tokens")
+
+    Component(candidateService,
+    "Candidate Profile Service",
+    ".NET Service",
+    "Gerencia perfis de candidatos")
+
+    Component(companyService,
+    "Company Profile Service",
+    ".NET Service",
+    "Gerencia perfis de empresas")
+
+    Component(vagaService,
+    "Vaga Manager Service",
+    ".NET Service",
+    "Gerencia vagas")
+
+    Component(matchEngine,
+    "Match Engine",
+    "Core Business Logic",
+    "Processa regras de match")
+
+    Component(repository,
+    "Database Access Layer",
+    "Repository Pattern",
+    "Persistência dos dados")
+}
+
+ContainerDb(db, "Banco de Dados", "PostgreSQL")
+
+System_Ext(authProvider,
+"External Authentication Provider",
+"OAuth Provider")
+
+System_Ext(emailSystem,
+"Email System",
+"Serviço de Notificação")
+
+Rel(authController, authProvider, "Valida Token")
+Rel(candidateService, matchEngine, "Consulta")
+Rel(companyService, matchEngine, "Consulta")
+Rel(vagaService, matchEngine, "Consulta")
+
+Rel(matchEngine, repository, "Lê/Escreve")
+Rel(repository, db, "SQL")
+
+Rel(matchEngine, emailSystem, "Envia Notificação")
+
+@enduml
