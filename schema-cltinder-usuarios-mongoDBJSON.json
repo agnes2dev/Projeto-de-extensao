@@ -1,0 +1,32 @@
+{
+  "$jsonSchema": {
+    "bsonType": "object",
+    "required": [
+      "_id",
+      "email",
+      "habilidades",
+      "nome",
+      "tipoUsuario"
+    ],
+    "properties": {
+      "_id": {
+        "bsonType": "int"
+      },
+      "email": {
+        "bsonType": "string"
+      },
+      "habilidades": {
+        "bsonType": "array",
+        "items": {
+          "bsonType": "string"
+        }
+      },
+      "nome": {
+        "bsonType": "string"
+      },
+      "tipoUsuario": {
+        "bsonType": "string"
+      }
+    }
+  }
+}
